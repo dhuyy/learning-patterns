@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 
-import BlueButton from './BlueButton';
-import RedButton from './RedButton';
+import FooButton from './FooButton';
+import BarButton from './BarButton';
 import { counter } from '../singleton/SingletonCounter';
 
 const App = () => {
@@ -15,8 +15,8 @@ const App = () => {
     <Fragment>
       <h1>{count}</h1>
       <hr />
-      <BlueButton onClickCallback={onClickHandler}></BlueButton>
-      <RedButton onClickCallback={onClickHandler}></RedButton>
+      <FooButton onClickCallback={onClickHandler}></FooButton>
+      <BarButton onClickCallback={onClickHandler}></BarButton>
     </Fragment>
   );
 };
